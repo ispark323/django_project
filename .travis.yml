@@ -1,0 +1,13 @@
+language: python
+python:
+- 3.6.7
+env:
+- DJANGO=1.11.7
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  api_key:
+    secure: sXydiIRjmtYGh7bthxL0+HRaREvNuBIoJN4A1ZjZ+vTloQtVWyg0yvPfKhyFSOHicH04EXlsoEXzNsz4lWzYjzW9M0vPeRZSLKm/vvo/TCkTKvmScRgk3ZETzuGdkOSag7zvK9vgZETOJBI1cTaJidEwaOV2H0YwiFVenHmNWHPOSXt96DTSNe7PV4JINNfmYCSOAtoUMaYI7nQvDfnWQDqjjikPHOzv8tS85suo2o33vUiywPEVzMpHUtlisdtfQ6yKzzAjE8/cwS0XBTTvkDBtlujbdjwDayK50JrX016U8Md1HhjYRIV/CNuAL9jg/35bAGYWcRkSpAoE/dYLBAy1VOfpJRpH2IAgcpnsMuuSH736KzJCXU+Vh3UA28e6bdTMI6ZWE8hgRirFDl5xZOsZbp5yi7VqJkV9X9zCSHL40NvmUV64gpWXibU4o9h/oKyj9XkOma0jqKhWqOirICUDR8Qb8a6m1H71+5/N0jh3XU0WrmaZRjCdVRv/H+5WFno5cv+FvKCbEgO4KE+89eoVCSIQbbxyDkuOOHZGgFzfZPpuPu5IEbw/cpVpHgcjchYGQdrXpWzUlMh4FUt21/ZgytEs+6jTQp8KFAWG6n2SnHbC9lnDxu/zZWMz87YNKoV6fUVo5AIMnTWq4ZhGMQOkNDG9CiLzz/mCVuNj8Yc=
+  app: desolate-sierra-80115
+  on:
+    repo: ispark323/django_project
