@@ -11,3 +11,4 @@ deploy:
   app: desolate-sierra-80115
   on:
     repo: ispark323/django_project
+script: pytest
